@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-      PATH = "$PATH:/opt/apache-maven-4.0.0/bin"
+      PATH = "$PATH:/opt/apache-maven-3.9.5/bin"
     }
     tools {
         maven 'Maven'  // Use the name you specified in Global Tool Configuration
