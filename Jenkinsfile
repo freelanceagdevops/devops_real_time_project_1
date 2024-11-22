@@ -3,7 +3,9 @@ pipeline {
     environment {
       PATH = "$PATH:/opt/apache-maven-4.0.0/bin"
     }
-    
+    tools {
+        maven 'Maven'  // Use the name you specified in Global Tool Configuration
+    }    
     stages {
 
         stage('CLEAN WORKSPACE') {
